@@ -35,9 +35,8 @@ def oauth_google():
     if not credentials or are_credentials_expired(credentials):
         # credentials.json should be in same directory
         flow = InstalledAppFlow.from_client_secrets_file(
-            "credentials.json", scopes=["https://www.googleapis.com/auth/youtube.force-ssl"])
+            "credentials.json", scopes=["https://www.googleapis.com/auth/youtube"])
 
-        print(type(flow), flow, flow.text)
         credentials = flow.run_local_server()
         save_credentials(credentials, credentials_filename)
 

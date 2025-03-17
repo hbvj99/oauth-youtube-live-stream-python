@@ -1,5 +1,5 @@
 # oauth-youtube-live-stream-python
-Python script that will oauth google and start live stream in youtube. It uses `FFmpeg` for video RMTP straming and processing.
+Python script that will oauth google and start live stream in youtube. It uses `FFmpeg` for video RMTP streaming and processing.
 
 ## Get Google Oauth credential
 1. Got to google cloud and enable `YouTube Data API v3`
